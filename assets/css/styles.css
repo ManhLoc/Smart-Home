@@ -159,6 +159,8 @@ button {
 }
 
 .censor__temp-value {
+    display: flex;
+    flex-wrap: nowrap;
     color: var(--primary--color-one);
     font-size: 3rem;
     font-weight: 500;

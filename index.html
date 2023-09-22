@@ -183,15 +183,22 @@
                                 <p class="welcome">
                                     Welcome home, Loc and Hieu
                                 </p>
-                                <p class="time__date">22/09/2023</p>
-                                <p class="time__current">14:49:50</p>
+                                <p id="timeDate" class="time__date">
+                                    22/09/2023
+                                </p>
+                                <p id="timeCurrent" class="time__current">
+                                    14:49:50
+                                </p>
                             </div>
                             <div class="main-left__censor">
                                 <div class="censor__one">
                                     <p class="censor__desc">Temp</p>
                                     <div class="censor__temp">
                                         <p class="censor__temp-value">
-                                            <span class="censor__value-temp">
+                                            <span
+                                                id="temp"
+                                                class="censor__value-temp"
+                                            >
                                                 24
                                             </span>
                                             °C
@@ -215,7 +222,10 @@
                                     <p class="censor__desc">Humid</p>
                                     <div class="censor__temp">
                                         <p class="censor__temp-value">
-                                            <span class="censor__value-temp">
+                                            <span
+                                                id="humid"
+                                                class="censor__value-temp"
+                                            >
                                                 24
                                             </span>
                                             %
@@ -261,7 +271,7 @@
                                 </div>
                                 <div class="censor__column"></div>
                                 <div class="censor__four">
-                                    <p class="censor__desc">Humid</p>
+                                    <p class="censor__desc">Rain</p>
                                     <div class="censor__temp">
                                         <p class="censor__temp-value">
                                             <span class="censor__value-temp">
@@ -329,6 +339,7 @@
                                             <img
                                                 src="./assets/img/camera-off.svg"
                                                 alt=""
+                                                id="imgOne"
                                                 class="device-img"
                                             />
                                             <p class="device-desc">Camera</p>
@@ -337,6 +348,7 @@
                                             <div id="btnOne" class="btn"></div>
                                             <button
                                                 type="button"
+                                                id="btnOffOne"
                                                 class="toggle-btn"
                                                 onclick="offClickOne()"
                                             >
@@ -344,6 +356,7 @@
                                             </button>
                                             <button
                                                 type="button"
+                                                id="btnOnOne"
                                                 class="toggle-btn"
                                                 onclick="onClickOne()"
                                             >
@@ -642,6 +655,9 @@
             </div>
         </footer>
 
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
         <script src="./index.js"></script>
     </body>
 </html>
