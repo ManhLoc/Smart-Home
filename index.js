@@ -21,41 +21,44 @@ dbRef.on("value", (snap) => (nhietDo.innerText = snap.val()));
 dbRef2.on("value", (snap) => (doAm.innerText = snap.val()));
 
 // Thay đổi sự kiện nút button
-const btnOne = document.getElementById('btnOne')
-const btnTwo = document.getElementById('btnTwo')
-const btnThree = document.getElementById('btnThree')
-const btnFour = document.getElementById('btnFour')
-
-function offClickOne() {
-    btnOne.style.left = '0'
+btnOffOne.onclick = function () {
+    document.getElementById('btnOne').style.left = '0'
+    document.getElementById('imgOne').src = "./assets/img/camera-off.svg"
 }
 
-function onClickOne() {
-    btnOne.style.left = '43px'
+btnOnOne.onclick = function () {
+    document.getElementById('btnOne').style.left = '43px'
+    document.getElementById('imgOne').src = "./assets/img/camera-on.svg"
 }
 
-function offClickTwo() {
-    btnTwo.style.left = '0'
+btnOffTwo.onclick = function () {
+    document.getElementById('btnTwo').style.left = '0'
+    document.getElementById('imgTwo').src = "./assets/img/door-closed-solid.svg"
 }
 
-function onClickTwo() {
-    btnTwo.style.left = '43px'
+btnOnTwo.onclick = function () {
+    document.getElementById('btnTwo').style.left = '43px'
+    document.getElementById('imgTwo').src = "./assets/img/door-open-solid.svg"
 }
 
-function offClickThree() {
-    btnThree.style.left = '0'
+btnOffThree.onclick = function () {
+    document.getElementById('btnThree').style.left = '0'
+    document.getElementById('imgThree').src = "./assets/img/microphone-off.svg"
 }
 
-function onClickThree() {
-    btnThree.style.left = '43px'
+btnOnThree.onclick = function () {
+    document.getElementById('btnThree').style.left = '43px'
+    document.getElementById('imgThree').src = "./assets/img/microphone-on.svg"
 }
 
-function offClickFour() {
-    btnFour.style.left = '0'
+btnOffFour.onclick = function () {
+    document.getElementById('btnFour').style.left = '0'
+    document.getElementById('imgFour').src = "./assets/img/volume-off-solid.svg"
 }
 
-function onClickFour() {
-    btnFour.style.left = '43px'
+btnOnFour.onclick = function () {
+    document.getElementById('btnFour').style.left = '43px'
+    document.getElementById('imgFour').src = "./assets/img/volume-on-solid.svg"
 }
 
 // Hiển thị thời gian
@@ -83,15 +86,3 @@ function hienthithoigian() {
 }
 
 hienthithoigian()
-
-// ==========================================
-const btnOffOne = document.getElementById('btnOffOne')
-const btnOnOne = document.getElementById('btnOnOne')
-
-btnOffOne.onclick = function () {
-    document.getElementById('imgOne').scr = "./assets/img/camera-off.svg"
-}
-
-btnOnOne.onclick = function () {
-    document.getElementById('imgOne').scr = "./assets/img/camera-on.svg"
-}
