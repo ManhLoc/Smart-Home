@@ -14,11 +14,17 @@ firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
 var nhietDo = document.getElementById("temp");
-var dbRef = firebase.database().ref().child("Temp");
 var doAm = document.getElementById("humid");
+var khiGa = document.getElementById("gas");
+var luongMua = document.getElementById("rain");
+var dbRef = firebase.database().ref().child("Temp");
 var dbRef2 = firebase.database().ref().child("Humid");
+var dbRef3 = firebase.database().ref().child("Gas");
+var dbRef4 = firebase.database().ref().child("Rain");
 dbRef.on("value", (snap) => (nhietDo.innerText = snap.val()));
 dbRef2.on("value", (snap) => (doAm.innerText = snap.val()));
+dbRef3.on("value", (snap) => (khiGa.innerText = snap.val()));
+dbRef4.on("value", (snap) => (luongMua.innerText = snap.val()));
 
 // Thay đổi sự kiện nút button
 btnOffOne.onclick = function () {
