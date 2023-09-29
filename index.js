@@ -29,12 +29,12 @@ dbRef4.on("value", (snap) => (luongMua.innerText = snap.val()));
 // Thay đổi sự kiện nút button
 btnOffOne.onclick = function () {
     document.getElementById('btnOne').style.left = '0'
-    document.getElementById('imgOne').src = "./assets/img/camera-off.svg"
+    document.getElementById('imgOne').src = "./assets/img/lightbulb-regular.svg"
 }
 
 btnOnOne.onclick = function () {
     document.getElementById('btnOne').style.left = '43px'
-    document.getElementById('imgOne').src = "./assets/img/camera-on.svg"
+    document.getElementById('imgOne').src = "./assets/img/lightbulb-solid.svg"
 }
 
 btnOffTwo.onclick = function () {
@@ -49,22 +49,22 @@ btnOnTwo.onclick = function () {
 
 btnOffThree.onclick = function () {
     document.getElementById('btnThree').style.left = '0'
-    document.getElementById('imgThree').src = "./assets/img/microphone-off.svg"
+    document.getElementById('imgThree').src = "./assets/img/fan-off.png"
 }
 
 btnOnThree.onclick = function () {
     document.getElementById('btnThree').style.left = '43px'
-    document.getElementById('imgThree').src = "./assets/img/microphone-on.svg"
+    document.getElementById('imgThree').src = "./assets/img/fan-on.png"
 }
 
 btnOffFour.onclick = function () {
     document.getElementById('btnFour').style.left = '0'
-    document.getElementById('imgFour').src = "./assets/img/volume-off-solid.svg"
+    document.getElementById('imgFour').src = "./assets/img/bell-off.png"
 }
 
 btnOnFour.onclick = function () {
     document.getElementById('btnFour').style.left = '43px'
-    document.getElementById('imgFour').src = "./assets/img/volume-on-solid.svg"
+    document.getElementById('imgFour').src = "./assets/img/bell-on.png"
 }
 
 // Hiển thị thời gian
